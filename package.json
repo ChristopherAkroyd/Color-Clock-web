@@ -1,0 +1,36 @@
+{
+  "name": "color_clock",
+  "version": "0.0.1",
+  "description": "",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ChristopherAkroyd/Color-Clock-web.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ChristopherAkroyd/Color-Clock-web/issues"
+  },
+  "homepage": "https://github.com/ChristopherAkroyd/Color-Clock-web#readme",
+  "devDependencies": {
+    "babel-preset-es2015": "^6.3.13",
+    "babel-preset-react": "^6.3.13",
+    "babelify": "^7.3.0",
+    "browserify": "^13.0.1",
+    "gulp": "^3.9.1",
+    "gulp-connect": "^5.0.0",
+    "gulp-sequence": "^0.4.5",
+    "gulp-util": "^3.0.7",
+    "gulp-watch": "^4.3.9",
+    "sassify": "^0.10.0",
+    "vinyl-source-stream": "^1.1.0",
+    "watchify": "^3.7.0"
+  },
+  "dependencies": {
+    "font-awesome": "^4.6.3"
+  }
+}
