@@ -1,0 +1,9 @@
+{
+  "simple" : {
+    "enabled" : false,
+    "mode" : "dark"
+  },
+  "unique" : {
+    "enabled" : true
+  }
+}

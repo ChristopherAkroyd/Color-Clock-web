@@ -1,0 +1,87 @@
+$default-transition-time: 250ms;
+$default-transition: all $default-transition-time linear;
+$switch-container-width: 100%;
+$switch-width: 60px;
+$switch-height: 20px;
+$switch-border-radius: 34px;
+$switch-border-radius-circle: 50%;
+$switch-circle-dimension: 12px;
+
+.switch-container {
+  width: $switch-container-width;
+  opacity: 0;
+  transition: $default-transition;
+
+  &.switch-show {
+    opacity: 1;
+  }
+
+
+  h3 {
+    margin: 5px 0;
+  }
+
+  p {
+    margin: 5px 0;
+  }
+}
+
+.switch-content {
+  display: flex;
+  flex-direction: row;
+
+  p:first-child {
+    width: 61px;
+  }
+}
+
+/* Below is stolen, refactor out*/
+
+.switch {
+  position: relative;
+  width: $switch-width;
+  height: $switch-height;
+  margin: 5px 12px;
+
+  input {
+    display: none;
+  }
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:checked + .slider:before {
+  transform: translateX(38px);
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: $default-transition;
+
+  &.round {
+    border-radius: $switch-border-radius;
+    &:before {
+      border-radius: $switch-border-radius-circle;
+    }
+  }
+
+  &:before {
+    position: absolute;
+    content: "";
+    height: $switch-circle-dimension;
+    width: $switch-circle-dimension;
+    left: 5px;
+    bottom: 4px;
+    background-color: white;
+    transition: $default-transition;
+  }
+}
